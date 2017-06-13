@@ -35,3 +35,8 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' | less"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi```
+
+
+Git Aliases
+`git config --global alias.co checkout`
+`git config --global alias.st status`
