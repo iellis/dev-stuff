@@ -13,11 +13,30 @@ Sidebar
 JSONLint
 Pretty JSON
 
+TrailingSpaces- config
+```
+{
+    "trailing_spaces_include_current_line" : false,
+
+    // By default, trailing spaces are deleted within the whole document.
+    // Set to true to affect only the lines you edited since last save.
+    // Trailing spaces will still be searched for and highlighted in the whole
+    // document.
+    "trailing_spaces_modified_lines_only": true,
+
+    // By default, nothing happens on save.
+    // Set to true to trim trailing spaces before saving, with respect to the
+    // other settings.
+    "trailing_spaces_trim_on_save": true,
+}
+```
+
 python dev:
 Anaconda
 
 GIT COMPLETION
-```#git-aware-prompt
+```
+#git-aware-prompt
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
@@ -34,7 +53,8 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' | less"
 #git completion `brew install bash-completion`
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
-fi```
+fi
+```
 
 
 Git Aliases
