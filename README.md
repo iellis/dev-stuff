@@ -13,6 +13,13 @@ Sidebar
 JSONLint
 Pretty JSON
 
+Sublime Key bindings
+```
+[
+  { “keys”: [“super+shift+o”], “command”: “show_overlay”, “args”: {“overlay”: “goto”, “show_files”: true} }
+]
+```
+
 TrailingSpaces- config
 ```
 {
